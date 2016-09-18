@@ -7,7 +7,7 @@ body{
 }
 .wrapper{
 	width: 892px;
-	height: 1342px;
+	height: 1386px;
 	background: white;
 	margin: 0 auto;  /* div居中的实现方法 */
 	padding: 0 44px 44px 44px;
@@ -47,7 +47,7 @@ aside hr{
 	text-transform: capitalize;
 	font-size: 24px;
 	color: black;
-	line-height: 30px;  /* 段落间距？？？ */
+	line-height: 30px;  
 	text-decoration: underline;
 	text-decoration-color: gray;
 }
@@ -279,12 +279,33 @@ h2 + hr{
 }
 blockquote{
 	font: italic 14px SimHei;
-	margin-top: 16px;
+	margin-top: 46px;
 	color: #5a5b5b;
+	margin-left: 280px;
 }
-blockquote .dote1{
+blockquote span{
 	font-size: 72px;
+	font-style: normal;
 	color: #d45d5c;
 	float: left;
-	margin-left: -10px;
+	height: 30px;
+	margin-left: -40px;
+	margin-top: -16px;
+	margin-right: 10px;
+}
+.marktwo {
+	float: right;
+	margin-right: -10px;
+	margin-top: 0px;
+}
+footer hr{
+	width: 892px;
+	border: none;
+	border-top: 1px solid #938e8c;
+	margin-top: 30px;
+}
+footer p{
+	text-align: right;
+	font: 12px SimHei;
+	color: #d45d4c;
 }
