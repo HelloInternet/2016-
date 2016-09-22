@@ -1,0 +1,387 @@
+.container{
+	min-width: 1280px;
+	width:100%;
+	font-family: 'Microsoft YaHei';
+}
+header{
+	height: 60px;
+	font-size:0; /*去掉顶部的空白部分*/
+}
+header .logo{
+	height:60px;
+	width:10%;
+	display: inline-block;
+	line-height:60px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	left:7%;
+
+	background: url(../image/icon1.png) no-repeat left center;
+	background-size: 23% 53%;
+}
+header .logo p{
+	font: 24px SimHei;
+	color:#393a3a;
+	cursor: default;
+	margin: 20px;
+}
+header nav{
+	height:60px;
+	width:35%;
+	display: inline-block;
+	position: relative;
+	left:40%;
+	vertical-align: middle;
+}
+header nav ul{
+	height:60px;
+	padding:0;
+	line-height:60px;
+}
+header nav ul li{
+	display: inline-block;
+	font-size:14px;
+	width:20%;
+	text-align: center;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#787b83;
+}
+header nav ul li a:hover{
+	color:#e74f4d;
+}
+header nav ul .move{
+	border-top:4px solid #e74f4d;
+	position:absolute;
+	left:0;
+	top:56px;
+
+	transition: left 0.4s ease;
+	-moz-transition: left 0.4s ease;
+	-webkit-transition: left 0.4s ease;
+}
+header nav ul li:nth-child(1):hover~.move{
+	left:0;
+}
+header nav ul li:nth-child(2):hover~.move{
+	left:20%;
+}
+header nav ul li:nth-child(3):hover~.move{
+	left:40%;
+}
+header nav ul li:nth-child(4):hover~.move{
+	left:60%;
+}
+header nav ul li:nth-child(5):hover~.move{
+	left:80%;
+}
+header .login{
+	display: inline-block;
+	width:6%;
+	height:60px;
+	line-height:60px;
+	position:relative;
+	right:-45%;
+	vertical-align: middle;
+}
+header .login p{
+	font-size:14px;
+	color: #e74f4d;
+	text-align: center;
+	margin:0;
+	padding-left:20px ;
+	background: url("../image/icon2.png") no-repeat left 10px center;
+	cursor: pointer;
+}
+header .login span{
+	display: inline-block;
+	border-top:2px solid #e74f4d;
+	width:0px;
+	position: absolute;
+	bottom:12px;
+	left:27px;
+
+	transition: width 0.4s ease;
+	-moz-transition: width 0.4s ease;
+	-webkit-transition: width 0.4s ease;
+}
+header .login p:hover~span{
+	width:50px;
+}
+.enjoy{
+	height:690px;
+	background: url("../image/img1.jpg") no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.enjoy div{
+	position: absolute;
+	left:8%;
+	top:25%;
+	color:#fff;
+}
+.enjoy div h1{
+	font-size:64px;
+	font-weight:normal;
+}
+.enjoy div p{
+	font-size:22px;
+	padding-left:10px;
+}
+.enjoy div button{
+	width:350px;
+	height:68px;
+	color: #fff;
+	font-size:32px;
+	background: #e74f4d;
+	border-style:none;
+	transition: background 0.5s ease;
+}
+.enjoy div button a{
+	color: #fff;
+	text-decoration: none;
+}
+.enjoy div button:hover{
+	background: #e31212;
+}
+.caption{
+	position: relative;
+}
+.caption ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	height:265px;
+}
+.caption ul li{
+	display: inline-block;
+	width:24%;
+	height:56px;
+	text-align: center;
+	margin-top:138px;
+	font:15px SimHei;
+	color: #767777;
+	transition: 0.4s ease;
+}
+.caption ul li:not(:last-child){
+	border-right:3px solid #767777;
+	margin-right: 0.5%;
+}
+.caption ul li:hover{
+	color:#e74f4d;
+}
+.caption img{
+	position: absolute;
+	top:50px;
+}
+.caption .one{
+	left:11%;
+}
+.caption .two{
+	left:37%;
+}
+.caption .three{
+	left:61%;
+}
+.caption .four{
+	left:86%;
+}
+.activity{
+	background: #edecec;
+}
+.activity .konw{
+	text-align: center;
+	height:380px;
+}
+.activity .konw img{
+	margin-top:75px;
+}
+.activity .konw h2{
+	color: #323333;
+	font:50px SimHei;
+}
+.activity .map{
+	height:340px;
+	background: url("../image/img2.jpg") no-repeat;
+	background-size:100%;
+	text-align: center;
+	padding-top:54px;
+	box-sizing: border-box;
+	position: relative;
+}
+.activity .map .search{
+	color: #fff;
+	font-size:22px;
+}
+.activity .map #underline{
+	display: inline-block;
+	border-top:2px solid #fff;
+	position: absolute;
+	left:49%;
+	top:110px;
+	width:2%;
+	transition: 0.4s ease;
+}
+.activity .map .search:hover + #underline{
+	width:22%;
+	left:39%;
+}
+.activity .map .search ~ p{
+	color: #fff;
+	font-size:13px;
+}
+.map .options{
+	height:36px;
+}
+.map input[type="radio"]{
+	width:240px;
+	height:36px;
+	margin:0 10px;
+	position: relative;
+	top:47px;
+	cursor: pointer;
+	z-index: 10;
+	opacity:0;
+}
+.map .options .select{
+	width:240px;
+	height:36px;
+	margin:0 10px;
+	font-size:14px;
+	line-height:36px;
+	text-align: left;
+	color: #a8aaaa;
+	display: inline-block;
+	position: relative;
+	box-sizing:border-box;
+	border:1px solid #be4e48;
+	background: url("../image/icon7.png") no-repeat 210px 8px #fff;
+	background-size: 20px;
+}
+.map .options .select:last-of-type{
+	visibility: hidden;
+}
+.map .options .select span{
+	margin-left:10px;
+}
+.map .options .select .option{
+	width:240px;
+	background-color: #e4e3e5;
+	position: absolute;
+	left:-2px;
+	top:34px;
+	display: none;
+	z-index: 10;
+}
+.map .r1:checked~.options .select, .map .r2:checked~.options .select{
+	top:-1px;
+}
+.map .r1:checked~.options .select-1{
+	border:2px solid #be4e48;
+	border-bottom-width:0;
+}
+.map .r1:checked~.options .select-1 .option{
+	display: block;
+}
+.map .r2:checked~.options .select-2{
+	border:2px solid #be4e48;
+	border-bottom-width:0;
+}
+.map .r2:checked~.options .select-2 .option{
+	display: block;
+}
+.map .options .select .option ul{
+	margin:0;
+	padding:0;
+	width:240px;
+	box-sizing: border-box;
+	border:2px solid #be4e48;
+	border-top-width:0;
+}
+.map .options .select .option ul li{
+	heigth:32px;
+	line-height:32px;
+	text-align: left;
+	padding-left: 40px;
+	list-style: none;
+	cursor: pointer;
+}
+.map .options .select .option ul li:hover{
+	background: url("../image/icon8.png") no-repeat 10px 8px ,#bf4e48;
+	background-size: 20px;
+	color: #ffffff;
+}
+.map input[type="submit"]{
+	width:240px;
+	height:36px;
+	line-height:36px;
+	font-size:16px;
+	border:0;
+	outline:0; /*去除最外的边框线*/
+	background: #be4f48;
+	color: #fff;
+	letter-spacing:30px;
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 38px;
+	top:36px;
+	position: relative;
+
+	transition: background 0.4s ease;
+}
+.map input[type="submit"]:hover{
+	background:#e31212;
+}
+.activity .painting{
+	height: 640px;
+	box-sizing: border-box;
+	padding: 106px 100px 106px 160px;
+}
+.activity .painting div{
+	width:232px;
+	height: 390px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 350px;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #3e3f3f;
+}
+.activity .painting div:not(:last-child){
+	margin-right: 40px;
+}
+.activity .painting .bj{
+	background: url('../image/img3.jpg') no-repeat 6px 0;
+}
+.activity .painting .sh{
+	background: url('../image/img4.jpg') no-repeat 6px 80px;
+}
+.activity .painting .sz{
+	background: url('../image/img6.jpg') no-repeat 6px 0;
+}
+.activity .painting .hk{
+	background: url('../image/img5.jpg') no-repeat 6px 0;
+}
+.activity .painting div p + p{
+	font-size: 11px;
+	color: #818181;
+	margin-top: -8px;
+}
+.activity .painting .sh p{
+	position: relative;
+	top: -370px;
+}
+.activity .painting .sh p:first-child{
+	font-size: 24px;
+	color: #323333;
+	letter-spacing: 28px;
+	margin-left: 20px;
+}
+.about .time .bj{
+	height: 600px;
+	background: url('../image/img7.jpg') no-repeat;
+	background-size: 900px 600px;
+	color: #fff;
+}
