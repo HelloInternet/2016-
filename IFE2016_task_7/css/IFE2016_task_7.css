@@ -301,7 +301,7 @@ header .login p:hover~span{
 	border-top-width:0;
 }
 .map .options .select .option ul li{
-	heigth:32px;
+	height: 32px;
 	line-height:32px;
 	text-align: left;
 	padding-left: 40px;
@@ -340,7 +340,7 @@ header .login p:hover~span{
 	padding: 106px 100px 106px 160px;
 }
 .activity .painting div{
-	width:232px;
+	width:21%;
 	height: 390px;
 	display: inline-block;
 	text-align: center;
@@ -379,9 +379,349 @@ header .login p:hover~span{
 	letter-spacing: 28px;
 	margin-left: 20px;
 }
+.about .time{
+	height: 600px;
+	position: relative;
+}
 .about .time .bj{
 	height: 600px;
+	width: 66%;
 	background: url('../image/img7.jpg') no-repeat;
-	background-size: 900px 600px;
+	background-size: 100% 600px;
 	color: #fff;
+	box-sizing: border-box;
+	padding-top: 130px;
+	text-align: center;
+}
+.about .time .bj p{
+	margin: 0;
+}
+.about .time .bj p:nth-child(1){
+	font-size: 51px;
+}
+.about .time .bj p:nth-child(2){
+	font-size: 165px;
+}
+.about .time .bj p:nth-child(3){
+	font-size: 22px;
+}
+.about .time .bj p:nth-child(4){
+	font-size: 22px;
+}
+.about .time .sd{
+	position: absolute;
+	width: 450px;
+	box-sizing: border-box;
+	text-align: center;
+	right: 0;
+	top: 0;
+	padding: 150px 62px;
+}
+.about .time .sd p:nth-child(1){
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.about .time .sd p:nth-child(1) span{
+	color: #e74f4d;
+}
+.about .time .sd p:nth-child(2){
+	text-align: left;
+	color: #aaaaaa;
+	font: 13px SimSun;
+	line-height: 30px;
+}
+.about .time .sd button{
+	outline: 0;
+	border: 1px solid #e25c60;
+	color: #e25c60;
+	background: #fff;
+	width: 110px;
+	height: 34px;
+	font-size: 13px;
+	cursor: pointer;
+	margin-top: 30px;
+
+	transition: 0.5s ease;
+}
+.about .time .sd button:hover{
+	background: #e25c60;
+	color: #fff;
+}
+.about .time .sd .dot{
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	border: 1px solid #aaa;
+	display: inline-block;
+	position: absolute;
+	bottom: 100px;
+	left: 190px;
+	margin: 7px;
+	cursor: pointer;
+}
+.about .time .sd .dot:nth-of-type(2){
+	left: 210px;
+}
+.about .time .sd .dot:nth-of-type(3){
+	left: 230px;
+}
+.about .time .sd .dot:hover{
+	background: #aaa;
+}
+.about .time .sd .triangle{
+	width: 0;
+	height: 0;
+	border-right: 28px solid #fff;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	position: absolute;
+	top: 300px;
+	left: -27px;
+}
+.about .more{
+	height: 550px;
+	background: url('../image/img8.jpg') no-repeat right 0 top 0;
+	background-size: 34% 550px;
+	position: relative;
+}
+.about .more .twins{
+	font: 22px SimHei;
+	text-align: center;
+}
+.about .more .left{
+	height: 550px;
+	width: 33%;
+	color: #fff;
+	background-color: #e74f4d;
+	box-sizing: border-box;
+	padding-top: 158px;
+}
+.about .more .right{
+	position: absolute;
+	top: 160px;
+	left: 43%;
+	color: #323333;
+}
+.about .more .twins button{
+	outline: 0;
+	width: 178px;
+	height: 47px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+.about .more .left button{
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #e74f4d;
+
+	transition: 0.5s ease;
+}
+.about .more .left button:hover{
+	color: #e74f4d;
+	background-color: #fff;
+}
+.about .more .right button{
+	border: 1px solid #e74f4d;
+	color: #e74f4d;
+	background-color: #fff;
+
+	transition: 0.5s ease;
+}
+.about .more .right button:hover{
+	color: #fff;
+	background-color: #e74f4d;
+}
+.about .more .twins span{
+	display: inline-block;
+	width: 32px;
+	height: 0;
+	border-top: 2px solid;
+	position: absolute;
+}
+.about .more .left span{
+	border-top-color: #fff;
+	left: 15%;
+}
+.about .more .right span{
+	border-top-color: #aaa;
+	left: 41%;
+}
+.about .more .trian{
+	width: 0;
+	height: 0;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 28px solid #fff;
+	position: absolute;
+	top: 257px;
+	right: 31.9%;
+}
+.container .volunteer{
+	height: 790px;
+	position: relative;
+}
+.volunteer div:first-child{
+	text-align: center;
+	height: 320px;
+	box-sizing: border-box;
+	padding-top: 110px;
+}
+.volunteer div:first-child p{
+	font-size: 13px;
+	color: #aaa;
+	line-height: 10px;
+}
+.volunteer div:first-child p:first-child{
+	font: 22px SimHei;
+	color: #323333;
+}
+.volunteer div:first-child p:first-child + span{
+	width: 32px;
+	border-top: 2px solid #e8504e;
+	position: absolute;
+	left: 49%;
+	top: 166px;
+}
+.volunteer .rule{
+	width: 38%;
+	height: 470px;
+	box-sizing: border-box;
+	padding: 10px 5% 175px 10%;
+	font: 13px SimSun;
+	color: #aaa;
+	line-height: 20px;
+	position: relative;
+}
+.volunteer .rule h3{
+	font: 18px SimHei;
+	color: #231815;
+	margin-top: 50px;
+}
+.volunteer .rule span{
+	position: absolute;
+	right: 16%;
+	top: 133px;
+	color: #79797d;
+}
+.volunteer .rule span + span{
+	top: 255px;
+}
+.volunteer .rule span + span + span{
+	top: 332px;
+}
+.volunteer .apply{
+	width: 62%;
+	position: absolute;
+	right: 0;
+	top: 320px;
+	box-sizing: border-box;
+	padding-top: 50px;
+}
+.volunteer .apply input, .volunteer .apply textarea{
+	outline: 0;
+	background-color: #ededef;
+	border: 0;
+	margin-bottom: 16px;
+	margin-right: 16px;
+	padding-left: 10px;
+}
+.volunteer .apply .basic{
+	height: 40px;
+	width: 41%;
+	box-sizing: border-box;
+}
+.volunteer .apply textarea{
+	width: 83%;
+	height: 140px;
+}
+.volunteer .apply input[type="submit"]{
+	width: 84.4%;
+	height: 40px;
+	cursor: pointer;
+	border: 1px solid transparent;
+
+	transition: 0.4s ease;
+}
+.volunteer .apply input[type="submit"]:hover{
+	border-radius: 5px;
+	border: 2px solid #d8d8dc;
+}
+.container .contact{
+	text-align: center;
+	color: #fff;
+	height: 380px;
+	background-color: #32353e;
+	box-sizing: border-box;
+	padding-top: 85px;
+	font-size: 0;
+}
+.container .contact h3{
+	font: 22px SimHei;
+	font-weight: normal;
+}
+.container .contact p{
+	font: 13px SimSun;
+}
+.container .contact input[type="text"]{
+	width: 34%;
+	border: 0;
+	outline: 0;
+	height: 42px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	margin-top: 27px;
+	font-size: 15px
+}
+.container .contact input[type="submit"]{
+	width: 7%;
+	height: 42px;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	background-color: #6f7278;
+	font-size: 16px;
+	cursor: pointer;
+
+	transition: 0.4s ease-in;
+}
+.container .contact input[type="submit"]:hover{
+	background-color: #62646a;
+}
+.container .contact .icon{
+	height: 50px;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 32px;
+}
+.container .contact .icon i{
+	width: 50px;
+	cursor: pointer;
+
+	transition: 0.4s ease;
+}
+.container .contact .icon i:hover{
+	font-size: 36px;
+}
+footer{
+	height: 60px;
+	background-color: #303039;
+	color: #fff;
+	font-size: 13px;
+	position: relative;
+}
+footer span{
+	position: absolute;
+	top: 30px;
+}
+footer span:first-child{
+	left: 7%;
+}
+footer span:last-child{
+	right: 7%;
+}
+footer span a{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
 }
