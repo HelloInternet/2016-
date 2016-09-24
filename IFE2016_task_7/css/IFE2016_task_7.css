@@ -1,0 +1,727 @@
+.container{
+	min-width: 1280px;
+	width:100%;
+	font-family: 'Microsoft YaHei';
+}
+header{
+	height: 60px;
+	font-size:0; /*去掉顶部的空白部分*/
+}
+header .logo{
+	height:60px;
+	width:10%;
+	display: inline-block;
+	line-height:60px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	left:7%;
+
+	background: url(../image/icon1.png) no-repeat left center;
+	background-size: 23% 53%;
+}
+header .logo p{
+	font: 24px SimHei;
+	color:#393a3a;
+	cursor: default;
+	margin: 20px;
+}
+header nav{
+	height:60px;
+	width:35%;
+	display: inline-block;
+	position: relative;
+	left:40%;
+	vertical-align: middle;
+}
+header nav ul{
+	height:60px;
+	padding:0;
+	line-height:60px;
+}
+header nav ul li{
+	display: inline-block;
+	font-size:14px;
+	width:20%;
+	text-align: center;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#787b83;
+}
+header nav ul li a:hover{
+	color:#e74f4d;
+}
+header nav ul .move{
+	border-top:4px solid #e74f4d;
+	position:absolute;
+	left:0;
+	top:56px;
+
+	transition: left 0.4s ease;
+	-moz-transition: left 0.4s ease;
+	-webkit-transition: left 0.4s ease;
+}
+header nav ul li:nth-child(1):hover~.move{
+	left:0;
+}
+header nav ul li:nth-child(2):hover~.move{
+	left:20%;
+}
+header nav ul li:nth-child(3):hover~.move{
+	left:40%;
+}
+header nav ul li:nth-child(4):hover~.move{
+	left:60%;
+}
+header nav ul li:nth-child(5):hover~.move{
+	left:80%;
+}
+header .login{
+	display: inline-block;
+	width:6%;
+	height:60px;
+	line-height:60px;
+	position:relative;
+	right:-45%;
+	vertical-align: middle;
+}
+header .login p{
+	font-size:14px;
+	color: #e74f4d;
+	text-align: center;
+	margin:0;
+	padding-left:20px ;
+	background: url("../image/icon2.png") no-repeat left 10px center;
+	cursor: pointer;
+}
+header .login span{
+	display: inline-block;
+	border-top:2px solid #e74f4d;
+	width:0px;
+	position: absolute;
+	bottom:12px;
+	left:27px;
+
+	transition: width 0.4s ease;
+	-moz-transition: width 0.4s ease;
+	-webkit-transition: width 0.4s ease;
+}
+header .login p:hover~span{
+	width:50px;
+}
+.enjoy{
+	height:690px;
+	background: url("../image/img1.jpg") no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.enjoy div{
+	position: absolute;
+	left:8%;
+	top:25%;
+	color:#fff;
+}
+.enjoy div h1{
+	font-size:64px;
+	font-weight:normal;
+}
+.enjoy div p{
+	font-size:22px;
+	padding-left:10px;
+}
+.enjoy div button{
+	width:350px;
+	height:68px;
+	color: #fff;
+	font-size:32px;
+	background: #e74f4d;
+	border-style:none;
+	transition: background 0.5s ease;
+}
+.enjoy div button a{
+	color: #fff;
+	text-decoration: none;
+}
+.enjoy div button:hover{
+	background: #e31212;
+}
+.caption{
+	position: relative;
+}
+.caption ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	height:265px;
+}
+.caption ul li{
+	display: inline-block;
+	width:24%;
+	height:56px;
+	text-align: center;
+	margin-top:138px;
+	font:15px SimHei;
+	color: #767777;
+	transition: 0.4s ease;
+}
+.caption ul li:not(:last-child){
+	border-right:3px solid #767777;
+	margin-right: 0.5%;
+}
+.caption ul li:hover{
+	color:#e74f4d;
+}
+.caption img{
+	position: absolute;
+	top:50px;
+}
+.caption .one{
+	left:11%;
+}
+.caption .two{
+	left:37%;
+}
+.caption .three{
+	left:61%;
+}
+.caption .four{
+	left:86%;
+}
+.activity{
+	background: #edecec;
+}
+.activity .konw{
+	text-align: center;
+	height:380px;
+}
+.activity .konw img{
+	margin-top:75px;
+}
+.activity .konw h2{
+	color: #323333;
+	font:50px SimHei;
+}
+.activity .map{
+	height:340px;
+	background: url("../image/img2.jpg") no-repeat;
+	background-size:100%;
+	text-align: center;
+	padding-top:54px;
+	box-sizing: border-box;
+	position: relative;
+}
+.activity .map .search{
+	color: #fff;
+	font-size:22px;
+}
+.activity .map #underline{
+	display: inline-block;
+	border-top:2px solid #fff;
+	position: absolute;
+	left:49%;
+	top:110px;
+	width:2%;
+	transition: 0.4s ease;
+}
+.activity .map .search:hover + #underline{
+	width:22%;
+	left:39%;
+}
+.activity .map .search ~ p{
+	color: #fff;
+	font-size:13px;
+}
+.map .options{
+	height:36px;
+}
+.map input[type="radio"]{
+	width:240px;
+	height:36px;
+	margin:0 10px;
+	position: relative;
+	top:47px;
+	cursor: pointer;
+	z-index: 10;
+	opacity:0;
+}
+.map .options .select{
+	width:240px;
+	height:36px;
+	margin:0 10px;
+	font-size:14px;
+	line-height:36px;
+	text-align: left;
+	color: #a8aaaa;
+	display: inline-block;
+	position: relative;
+	box-sizing:border-box;
+	border:1px solid #be4e48;
+	background: url("../image/icon7.png") no-repeat 210px 8px #fff;
+	background-size: 20px;
+}
+.map .options .select:last-of-type{
+	visibility: hidden;
+}
+.map .options .select span{
+	margin-left:10px;
+}
+.map .options .select .option{
+	width:240px;
+	background-color: #e4e3e5;
+	position: absolute;
+	left:-2px;
+	top:34px;
+	display: none;
+	z-index: 10;
+}
+.map .r1:checked~.options .select, .map .r2:checked~.options .select{
+	top:-1px;
+}
+.map .r1:checked~.options .select-1{
+	border:2px solid #be4e48;
+	border-bottom-width:0;
+}
+.map .r1:checked~.options .select-1 .option{
+	display: block;
+}
+.map .r2:checked~.options .select-2{
+	border:2px solid #be4e48;
+	border-bottom-width:0;
+}
+.map .r2:checked~.options .select-2 .option{
+	display: block;
+}
+.map .options .select .option ul{
+	margin:0;
+	padding:0;
+	width:240px;
+	box-sizing: border-box;
+	border:2px solid #be4e48;
+	border-top-width:0;
+}
+.map .options .select .option ul li{
+	height: 32px;
+	line-height:32px;
+	text-align: left;
+	padding-left: 40px;
+	list-style: none;
+	cursor: pointer;
+}
+.map .options .select .option ul li:hover{
+	background: url("../image/icon8.png") no-repeat 10px 8px ,#bf4e48;
+	background-size: 20px;
+	color: #ffffff;
+}
+.map input[type="submit"]{
+	width:240px;
+	height:36px;
+	line-height:36px;
+	font-size:16px;
+	border:0;
+	outline:0; /*去除最外的边框线*/
+	background: #be4f48;
+	color: #fff;
+	letter-spacing:30px;
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 38px;
+	top:36px;
+	position: relative;
+
+	transition: background 0.4s ease;
+}
+.map input[type="submit"]:hover{
+	background:#e31212;
+}
+.activity .painting{
+	height: 640px;
+	box-sizing: border-box;
+	padding: 106px 100px 106px 160px;
+}
+.activity .painting div{
+	width:21%;
+	height: 390px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 350px;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #3e3f3f;
+}
+.activity .painting div:not(:last-child){
+	margin-right: 40px;
+}
+.activity .painting .bj{
+	background: url('../image/img3.jpg') no-repeat 6px 0;
+}
+.activity .painting .sh{
+	background: url('../image/img4.jpg') no-repeat 6px 80px;
+}
+.activity .painting .sz{
+	background: url('../image/img6.jpg') no-repeat 6px 0;
+}
+.activity .painting .hk{
+	background: url('../image/img5.jpg') no-repeat 6px 0;
+}
+.activity .painting div p + p{
+	font-size: 11px;
+	color: #818181;
+	margin-top: -8px;
+}
+.activity .painting .sh p{
+	position: relative;
+	top: -370px;
+}
+.activity .painting .sh p:first-child{
+	font-size: 24px;
+	color: #323333;
+	letter-spacing: 28px;
+	margin-left: 20px;
+}
+.about .time{
+	height: 600px;
+	position: relative;
+}
+.about .time .bj{
+	height: 600px;
+	width: 66%;
+	background: url('../image/img7.jpg') no-repeat;
+	background-size: 100% 600px;
+	color: #fff;
+	box-sizing: border-box;
+	padding-top: 130px;
+	text-align: center;
+}
+.about .time .bj p{
+	margin: 0;
+}
+.about .time .bj p:nth-child(1){
+	font-size: 51px;
+}
+.about .time .bj p:nth-child(2){
+	font-size: 165px;
+}
+.about .time .bj p:nth-child(3){
+	font-size: 22px;
+}
+.about .time .bj p:nth-child(4){
+	font-size: 22px;
+}
+.about .time .sd{
+	position: absolute;
+	width: 450px;
+	box-sizing: border-box;
+	text-align: center;
+	right: 0;
+	top: 0;
+	padding: 150px 62px;
+}
+.about .time .sd p:nth-child(1){
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.about .time .sd p:nth-child(1) span{
+	color: #e74f4d;
+}
+.about .time .sd p:nth-child(2){
+	text-align: left;
+	color: #aaaaaa;
+	font: 13px SimSun;
+	line-height: 30px;
+}
+.about .time .sd button{
+	outline: 0;
+	border: 1px solid #e25c60;
+	color: #e25c60;
+	background: #fff;
+	width: 110px;
+	height: 34px;
+	font-size: 13px;
+	cursor: pointer;
+	margin-top: 30px;
+
+	transition: 0.5s ease;
+}
+.about .time .sd button:hover{
+	background: #e25c60;
+	color: #fff;
+}
+.about .time .sd .dot{
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	border: 1px solid #aaa;
+	display: inline-block;
+	position: absolute;
+	bottom: 100px;
+	left: 190px;
+	margin: 7px;
+	cursor: pointer;
+}
+.about .time .sd .dot:nth-of-type(2){
+	left: 210px;
+}
+.about .time .sd .dot:nth-of-type(3){
+	left: 230px;
+}
+.about .time .sd .dot:hover{
+	background: #aaa;
+}
+.about .time .sd .triangle{
+	width: 0;
+	height: 0;
+	border-right: 28px solid #fff;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	position: absolute;
+	top: 300px;
+	left: -27px;
+}
+.about .more{
+	height: 550px;
+	background: url('../image/img8.jpg') no-repeat right 0 top 0;
+	background-size: 34% 550px;
+	position: relative;
+}
+.about .more .twins{
+	font: 22px SimHei;
+	text-align: center;
+}
+.about .more .left{
+	height: 550px;
+	width: 33%;
+	color: #fff;
+	background-color: #e74f4d;
+	box-sizing: border-box;
+	padding-top: 158px;
+}
+.about .more .right{
+	position: absolute;
+	top: 160px;
+	left: 43%;
+	color: #323333;
+}
+.about .more .twins button{
+	outline: 0;
+	width: 178px;
+	height: 47px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+.about .more .left button{
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #e74f4d;
+
+	transition: 0.5s ease;
+}
+.about .more .left button:hover{
+	color: #e74f4d;
+	background-color: #fff;
+}
+.about .more .right button{
+	border: 1px solid #e74f4d;
+	color: #e74f4d;
+	background-color: #fff;
+
+	transition: 0.5s ease;
+}
+.about .more .right button:hover{
+	color: #fff;
+	background-color: #e74f4d;
+}
+.about .more .twins span{
+	display: inline-block;
+	width: 32px;
+	height: 0;
+	border-top: 2px solid;
+	position: absolute;
+}
+.about .more .left span{
+	border-top-color: #fff;
+	left: 15%;
+}
+.about .more .right span{
+	border-top-color: #aaa;
+	left: 41%;
+}
+.about .more .trian{
+	width: 0;
+	height: 0;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 28px solid #fff;
+	position: absolute;
+	top: 257px;
+	right: 31.9%;
+}
+.container .volunteer{
+	height: 790px;
+	position: relative;
+}
+.volunteer div:first-child{
+	text-align: center;
+	height: 320px;
+	box-sizing: border-box;
+	padding-top: 110px;
+}
+.volunteer div:first-child p{
+	font-size: 13px;
+	color: #aaa;
+	line-height: 10px;
+}
+.volunteer div:first-child p:first-child{
+	font: 22px SimHei;
+	color: #323333;
+}
+.volunteer div:first-child p:first-child + span{
+	width: 32px;
+	border-top: 2px solid #e8504e;
+	position: absolute;
+	left: 49%;
+	top: 166px;
+}
+.volunteer .rule{
+	width: 38%;
+	height: 470px;
+	box-sizing: border-box;
+	padding: 10px 5% 175px 10%;
+	font: 13px SimSun;
+	color: #aaa;
+	line-height: 20px;
+	position: relative;
+}
+.volunteer .rule h3{
+	font: 18px SimHei;
+	color: #231815;
+	margin-top: 50px;
+}
+.volunteer .rule span{
+	position: absolute;
+	right: 16%;
+	top: 133px;
+	color: #79797d;
+}
+.volunteer .rule span + span{
+	top: 255px;
+}
+.volunteer .rule span + span + span{
+	top: 332px;
+}
+.volunteer .apply{
+	width: 62%;
+	position: absolute;
+	right: 0;
+	top: 320px;
+	box-sizing: border-box;
+	padding-top: 50px;
+}
+.volunteer .apply input, .volunteer .apply textarea{
+	outline: 0;
+	background-color: #ededef;
+	border: 0;
+	margin-bottom: 16px;
+	margin-right: 16px;
+	padding-left: 10px;
+}
+.volunteer .apply .basic{
+	height: 40px;
+	width: 41%;
+	box-sizing: border-box;
+}
+.volunteer .apply textarea{
+	width: 83%;
+	height: 140px;
+}
+.volunteer .apply input[type="submit"]{
+	width: 84.4%;
+	height: 40px;
+	cursor: pointer;
+	border: 1px solid transparent;
+
+	transition: 0.4s ease;
+}
+.volunteer .apply input[type="submit"]:hover{
+	border-radius: 5px;
+	border: 2px solid #d8d8dc;
+}
+.container .contact{
+	text-align: center;
+	color: #fff;
+	height: 380px;
+	background-color: #32353e;
+	box-sizing: border-box;
+	padding-top: 85px;
+	font-size: 0;
+}
+.container .contact h3{
+	font: 22px SimHei;
+	font-weight: normal;
+}
+.container .contact p{
+	font: 13px SimSun;
+}
+.container .contact input[type="text"]{
+	width: 34%;
+	border: 0;
+	outline: 0;
+	height: 42px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	margin-top: 27px;
+	font-size: 15px
+}
+.container .contact input[type="submit"]{
+	width: 7%;
+	height: 42px;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	background-color: #6f7278;
+	font-size: 16px;
+	cursor: pointer;
+
+	transition: 0.4s ease-in;
+}
+.container .contact input[type="submit"]:hover{
+	background-color: #62646a;
+}
+.container .contact .icon{
+	height: 50px;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 32px;
+}
+.container .contact .icon i{
+	width: 50px;
+	cursor: pointer;
+
+	transition: 0.4s ease;
+}
+.container .contact .icon i:hover{
+	font-size: 36px;
+}
+footer{
+	height: 60px;
+	background-color: #303039;
+	color: #fff;
+	font-size: 13px;
+	position: relative;
+}
+footer span{
+	position: absolute;
+	top: 30px;
+}
+footer span:first-child{
+	left: 7%;
+}
+footer span:last-child{
+	right: 7%;
+}
+footer span a{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
