@@ -1,0 +1,202 @@
+.container{
+    min-width: 1366px;
+}
+header{
+    width:100%;
+    height:55px;
+    background:url("../img/logo.png") no-repeat left 50px top 10px;
+    background-color: #228abf;
+    position: relative;
+}
+header input{
+    width:300px;
+    height:28px;
+    border-radius:14px;
+    position: absolute;
+    top: 14px;
+    right: 160px;
+    box-sizing: border-box;
+    padding-left:40px;
+    outline:none;
+    font-size:15px;
+}
+header .glyphicon-search{
+    top:21px;
+    right:-920px;
+    color: #c7c5c5;
+    z-index: 3;
+    font-size:15px;
+}
+header span{
+    position: absolute;
+    right:80px;
+    top:20px;
+    color: #fff;
+    font-size:14px;
+    cursor: pointer;
+}
+header span .glyphicon-user{
+    margin-right:10px;
+}
+aside{
+    width:300px;
+    background: #2a2e3d;
+    height:1200px;
+    box-sizing: border-box;
+    position: relative;
+}
+aside .username{
+    height:90px;
+    position: relative;
+    color: #fff;
+    font-size:18px;
+}
+aside .username .circle{
+    width:60px;
+    height:60px;
+    background: #2a2e3d;
+    border-radius: 50%;
+    border:2px solid #b9babd;
+    box-sizing: border-box;
+    position: absolute;
+    top:15px;
+    left: 70px;
+}
+aside .username .circle .round{
+    width:46px;
+    height:46px;
+    background: #b9babd;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+aside .username p{
+    position: absolute;
+    top:35px;
+    right:74px;
+}
+aside .fans{
+    height:78px;
+    color: #6e8095;
+    font-size:16px;
+    position: relative;
+}
+aside .fans div{
+    position: absolute;
+    top:10px;
+    text-align: center;
+    cursor: pointer;
+}
+aside .fans div:first-child{
+    left:80px;
+}
+aside .fans div:last-child{
+    left:125px;
+    border-left:1px solid #6e8095;
+    padding-left:15px;
+}
+aside .fans div:hover{
+    color: #b74d4d;
+}
+aside .report{
+    height:240px;
+    font-size:15px;
+    line-height:38px;
+    color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    background: #383e4e;
+    cursor: pointer;
+}
+aside .report p{
+    margin-left:60px;
+}
+aside .report p .glyphicon-list-alt{
+    margin-right:10px;
+}
+aside .report .outside{
+    margin-left:84px;
+}
+aside .report .outside .inside{
+    margin-left:24px;
+}
+aside .report .outside .inside li:last-child{
+    color: #6e8095;
+}
+/* first-child 前不能忘了加 : */
+aside .report .outside li:not(:first-child){
+    color: #6e8095;
+}
+aside .report .outside .inside li:last-child:hover, aside .report .outside li:not(:first-child):hover{
+    color: #fff;
+}
+aside .other {
+    font-size:15px;
+    line-height:38px;
+}
+aside .other ul li{
+    padding-left:84px;
+    cursor: pointer;
+}
+aside .other ul li:hover{
+    color:#fff;
+    background: #383e4e;
+}
+section .breadcrumb{
+    height: 55px;
+    width: 100%;
+}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-search:before {
+    content: "\e003";
+}
+.glyphicon-user:before {
+    content: "\e008";
+}
+.glyphicon-list-alt:before {
+    content: "\e032";
+}
+.glyphicon-chevron-down:before {
+    content: "\e114";
+}
+.glyphicon-folder-open:before {
+    content: "\e118";
+}
+.glyphicon-align-justify:before {
+    content: "\e055";
+}
+.glyphicon-chevron-right:before {
+    content: "\e080";
+}
+.glyphicon-star:before {
+    content: "\e006";
+}
+.glyphicon-send:before {
+    content: "\e171";
+}
+.glyphicon-picture:before {
+    content: "\e060";
+}
+.glyphicon-record:before {
+    content: "\e165";
+}
+.glyphicon-scale:before {
+    content: "\e230";
+}
