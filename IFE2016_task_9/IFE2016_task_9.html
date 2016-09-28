@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/IFE2016_task_9.css">
 </head>
 <body>
-  <div class="container">
+  
     <header>
         <i class="glyphicon glyphicon-search"></i>
         <input type="text">
         <span><i class="glyphicon glyphicon-user"></i>登录</span>
     </header>
-
+  
+  <div class="container">
+    
     <aside>
         <div class="username">
             <div class="circle">
@@ -85,15 +87,79 @@
     </aside>
 
     <section>
-        <div class="breadcrumb">
-            <ul>
-                <li>C站</li>
-                <li>个人报表</li>
-                <li>文件一</li>
-                <li>文件二</li>
-            </ul>
+        
+        <ul class="breadcrumb">
+            <li>C站</li>
+            <li>个人报表</li>
+            <li>文件一</li>
+            <li>文档1</li>
+        </ul>
+        
+        <div class="main search">
+            <form>
+                <div class="column query">
+                    <label>查询项</label>
+                    <a class="btn-select">
+                        <input type="radio" class="hidden-btn">
+                        <ul class="dropdown">
+                            <li>第一项</li>
+                            <li>第二项</li>
+                            <li>第三项</li>
+                        </ul>
+                        <span cur-select>
+                            第一项
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="column buyer-seller">
+                    <div>
+                        <label>买方</label>
+                        <a class="btn-select buyer">
+                            <input type="radio" class="hidden-btn">
+                            <ul class="dropdown">
+                                <li>小A</li>
+                                <li>小B</li>
+                                <li>小C</li>
+                            </ul>
+                            <span class="cur-select">
+                                小A
+                                <i class="glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="seller">
+                        <label>卖方</label>
+                        <a class="btn-select buyer">
+                            <input type="radio" class="hidden-btn">
+                            <ul class="dropdown">
+                                <li>小D</li>
+                                <li>小E</li>
+                                <li>小F</li>
+                            </ul>
+                            <span class="cur-select">
+                                小D
+                                <i class="glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <a>换</a>
+                </div>
+                <div class="column details">
+                    
+                </div>
+            </form>
         </div>
+        
+        <div class="main ask"></div>
+        
+        <div class="main statistic"></div>
+        
+        <div class="main item"></div>
+        
+        <div class="main time"></div>
     </section>
+  
   </div>
 </body>
 </html>
