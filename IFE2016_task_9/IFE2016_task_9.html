@@ -100,7 +100,7 @@
                 <div class="column query">
                     <label>查询项</label>
                     <a class="btn-select">
-                        <input type="radio" class="hidden-btn">
+                        <input type="radio" class="hidden-btn" name="item">
                         <ul class="dropdown">
                             <li>第一项</li>
                             <li>第二项</li>
@@ -116,7 +116,7 @@
                     <div>
                         <label>买方</label>
                         <a class="btn-select buyer">
-                            <input type="radio" class="hidden-btn">
+                            <input type="radio" class="hidden-btn" name="item">
                             <ul class="dropdown">
                                 <li>小A</li>
                                 <li>小B</li>
@@ -131,7 +131,7 @@
                     <div class="seller">
                         <label>卖方</label>
                         <a class="btn-select buyer">
-                            <input type="radio" class="hidden-btn">
+                            <input type="radio" class="hidden-btn" name="item">
                             <ul class="dropdown">
                                 <li>小D</li>
                                 <li>小E</li>
@@ -143,10 +143,57 @@
                             </span>
                         </a>
                     </div>
-                    <a>换</a>
+                    <a class="change">换</a>
                 </div>
                 <div class="column details">
-                    
+                    <div>
+                        <label>日期</label>
+                        <a class="btn-select input-date">
+                            <span class="cur-select">2016-04-01</span>
+                        </a>
+                        <label>总耗时</label>
+                        <a class="btn-select">
+                            <input type="radio" class="hidden-btn" name="item">
+                            <ul class="dropdown">
+                                <li>6天</li>
+                                <li>7天</li>
+                                <li>8天</li>
+                            </ul>
+                            <span class="cur-select">
+                                8天
+                                <i class="glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="counters">
+                        <label>人数</label>
+                        <a class="btn-select counter">
+                            <input type="radio" class="hidden-btn" name="item">
+                            <ul class="dropdown">
+                                <li>10人</li>
+                                <li>15人</li>
+                                <li>20人</li>
+                            </ul>
+                            <span class="cur-select">
+                                10人
+                                <i class="glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </a>
+                        <label>成交项</label>
+                        <a class="btn-select deals">
+                            <input type="radio" class="hidden-btn" name="item">
+                            <ul class="dropdown">
+                                <li>10项</li>
+                                <li>30项</li>
+                                <li>50项</li>
+                            </ul>
+                            <span class="cur-select">
+                                10项
+                                <i class="glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </a>
+                        <a href="##" class="search-btn">搜索</a>
+                    </div>
                 </div>
             </form>
         </div>

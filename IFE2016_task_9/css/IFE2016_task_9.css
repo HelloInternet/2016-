@@ -179,9 +179,92 @@ section .search form{
 }
 section .search form .column{
     float: left;
+    margin-right: 15px;
 }
 section .search form .query{
     width: 160px;
+}
+section .search .btn-select{
+    display: inline-block;
+    width: 80px;
+    padding-left: 10px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 1px solid #2a2e3d;
+    position: relative;
+}
+section .search .btn-select .hidden-btn{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 9;
+    position: absolute;
+}
+section .search .btn-select .dropdown{
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0 0 5px #aaa;
+    z-index: 99;
+}
+section .search .btn-select:hover .hidden-btn:checked + .dropdown{
+    display: block;
+}
+section .search .btn-select:hover, .search .btn-select .hidden-btn:hover{
+    cursor: pointer;
+}
+section .search .btn-select .dropdown li{
+    padding-left: 10px;
+}
+section .search .btn-select .dropdown li:hover{
+    background: #bababe;
+}
+section .search .btn-select i{
+    float: right;
+    line-height: 25px;
+    margin-right: 2px;
+}
+section .search .buyer-seller{
+    width: 250px;
+    position: relative;
+}
+section .search .buyer-seller .buyer{
+    width: 150px;
+}
+section .search .buyer-seller .seller, .search .details .counters{
+    margin-top: 10px;
+}
+.search .buyer-seller .change{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    padding-top: 23px;
+    padding-left: 13px;
+    color: #fff;
+    background: url('../img/change.png') no-repeat 1px 12px;
+    height: 100%;
+}
+.search .details{
+    position: relative;
+    width: 350px;
+}
+.search .details .input-date{
+    width: 120px;
+}
+.search .details .counter, .search .details .deals{
+    width: 100px;
+}
+.search .details .counter a.search-btn{
+    display: inline-block;
+    width: 60px;
+    background-color: #2189bf;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
 }
 @font-face {
     font-family: 'Glyphicons Halflings';
