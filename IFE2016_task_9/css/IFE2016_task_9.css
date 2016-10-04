@@ -166,10 +166,10 @@ section .breadcrumb li:hover{
 }
 section .main{
     margin: 30px 80px;
-    background: #fff;
     height: 100px;
 }
 section .search{
+  background-color: #fff;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
@@ -271,23 +271,109 @@ section .search .buyer-seller .seller, .search .details .counters{
     right: -20px;
 }
 .main.history{
-  background-color: pink;
-  border-radius: 14px;
+  cursor: pointer;
 }
 .history > div{
   float: left;
   margin-right: 10px;
 }
 .history .pre ,.history .next{
-  background: orange;
+  background-color: #fff;
   width:30px;
-  /*height: 100%;*/
   font-size: 18px;
   text-align: center;
   line-height: 100px;
 }
 .history .pre{
-
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.history .middle{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-top: 24px;
+  border-top: 6px solid #fff;
+}
+.history div.middle:nth-child(2){
+  border-top-color: #2189bf;
+}
+.history .middle:hover{
+  border-top-color: #2189bf;
+}
+.history .middle p:last-child span{
+  font-size: 22px;
+  line-height: 50px;
+  color: #ec6500;
+}
+.history .end{
+  background-color:#fff;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top:40px;
+  padding-right: 20px;
+  padding-left: 15px;
+  margin-right: 0;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.history .end i{
+  color: #388ac1;
+  font-size: 26px;
+}
+.statistic > div{
+  box-sizing: border-box;
+  float: left;
+  height: 70px;
+  width:22.8%;
+  background-color: #fff;
+  margin-right: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.statistic .green{
+  border-left: 3px solid #43b29d;
+}
+.statistic .blue{
+  border-left: 3px solid #388ac1;
+}
+.statistic .red{
+  border-left:3px solid #cf4a36;
+}
+.statistic .yellow{
+  border-left:3px solid #e2cd46;
+  margin-right: 0;
+}
+.statistic p:first-child{
+  line-height: 26px;
+  color: #000;
+}
+.statistic > div p{
+  text-indent: 15px;
+}
+.statistic > div p:first-child{
+  padding-top: 15px;
+}
+.statistic > div >div {
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.green > div{
+  background-color: #43b29d;
+}
+.blue > div{
+  background-color: #388ac1;
+}
+.red > div{
+  background-color: #cf4a36;
+}
+.yellow > div{
+  background-color: #e2cd46;
 }
 @font-face {
     font-family: 'Glyphicons Halflings';
@@ -345,4 +431,7 @@ section .search .buyer-seller .seller, .search .details .counters{
 }
 .glyphicon-chevron-left:before {
   content: "\e079";
+}
+.glyphicon-calendar:before {
+  content: "\e109";
 }

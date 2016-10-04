@@ -1,247 +1,283 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>IFE2016_task_9</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/IFE2016_task_9.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>IFE2016_task_9</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/IFE2016_task_9.css">
+    </head>
+    <body>
 
-    <header>
-        <i class="glyphicon glyphicon-search"></i>
-        <input type="text">
-        <span><i class="glyphicon glyphicon-user"></i>登录</span>
-    </header>
+        <header>
+            <i class="glyphicon glyphicon-search"></i>
+            <input type="text">
+            <span>
+                <i class="glyphicon glyphicon-user"></i>登录</span>
+        </header>
 
-  <div class="container">
+        <div class="container">
 
-    <aside>
-        <div class="username">
-            <div class="circle">
-                <div class="round"></div>
-            </div>
-            <p>YoloMonkey</p>
-        </div>
+            <aside>
+                <div class="username">
+                    <div class="circle">
+                        <div class="round"></div>
+                    </div>
+                    <p>YoloMonkey</p>
+                </div>
 
-         <div class="fans">
-             <div class="collect">110<br />收藏</div>
-             <div>313<br />粉丝</div>
-         </div>
+                <div class="fans">
+                    <div class="collect">110<br/>收藏</div>
+                    <div>313<br/>粉丝</div>
+                </div>
 
-        <div class="report">
-            <p><i class="glyphicon glyphicon-list-alt"></i>个人报表</p>
-            <ul class="outside">
-                <li>
-                    <i class="glyphicon glyphicon-chevron-down"></i>
-                    <i class="glyphicon glyphicon-folder-open"></i>
-                    文件一
-                    <ul class="inside">
+                <div class="report">
+                    <p>
+                        <i class="glyphicon glyphicon-list-alt"></i>个人报表</p>
+                    <ul class="outside">
                         <li>
-                            <i class="glyphicon glyphicon-align-justify"></i>
-                            文档1
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <i class="glyphicon glyphicon-folder-open"></i>
+                            文件一
+                            <ul class="inside">
+                                <li>
+                                    <i class="glyphicon glyphicon-align-justify"></i>
+                                    文档1
+                                </li>
+                                <li>
+                                    <i class="glyphicon glyphicon-align-justify"></i>
+                                    文档2
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <i class="glyphicon glyphicon-align-justify"></i>
-                            文档2
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                            <i class="glyphicon glyphicon-folder-open"></i>
+                            文件二
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                            <i class="glyphicon glyphicon-folder-open"></i>
+                            文件三
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <i class="glyphicon glyphicon-chevron-right"></i>
-                    <i class="glyphicon glyphicon-folder-open"></i>
-                    文件二
-                </li>
-                <li>
-                    <i class="glyphicon glyphicon-chevron-right"></i>
-                    <i class="glyphicon glyphicon-folder-open"></i>
-                    文件三
-                </li>
-            </ul>
-        </div>
-
-        <div class="other">
-            <ul>
-                <li>
-                    <i class="glyphicon glyphicon-star"></i>
-                    个人收藏
-                </li>
-                <li>
-                    <i class="glyphicon glyphicon-send"></i>
-                    我的分享
-                </li>
-                <li>
-                    <i class="glyphicon glyphicon-picture"></i>
-                    图库
-                </li>
-                <li>
-                    <i class="glyphicon glyphicon-record"></i>
-                    成长记录
-                </li>
-                <li>
-                    <i class="glyphicon glyphicon-scale"></i>
-                    账户信息
-                </li>
-            </ul>
-        </div>
-    </aside>
-
-    <section>
-
-        <ul class="breadcrumb">
-            <li>C站</li>
-            <li>个人报表</li>
-            <li>文件一</li>
-            <li>文档1</li>
-        </ul>
-
-        <div class="main search">
-            <form>
-                <div class="column query">
-                    <label>查询项</label>
-                    <a class="btn-select">
-                        <input type="radio" class="hidden-btn" name="item">
-                        <ul class="dropdown">
-                            <li>第一项</li>
-                            <li>第二项</li>
-                            <li>第三项</li>
-                        </ul>
-                        <span cur-select>
-                            第一项
-                            <i class="glyphicon glyphicon-chevron-down"></i>
-                        </span>
-                    </a>
                 </div>
-                <div class="column buyer-seller">
-                    <div>
-                        <label>买方</label>
-                        <a class="btn-select buyer">
-                            <input type="radio" class="hidden-btn" name="item">
-                            <ul class="dropdown">
-                                <li>小A</li>
-                                <li>小B</li>
-                                <li>小C</li>
-                            </ul>
-                            <span class="cur-select">
-                                小A
-                                <i class="glyphicon glyphicon-chevron-down"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="seller">
-                        <label>卖方</label>
-                        <a class="btn-select buyer">
-                            <input type="radio" class="hidden-btn" name="item">
-                            <ul class="dropdown">
-                                <li>小D</li>
-                                <li>小E</li>
-                                <li>小F</li>
-                            </ul>
-                            <span class="cur-select">
-                                小D
-                                <i class="glyphicon glyphicon-chevron-down"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <a class="change">换</a>
+
+                <div class="other">
+                    <ul>
+                        <li>
+                            <i class="glyphicon glyphicon-star"></i>
+                            个人收藏
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-send"></i>
+                            我的分享
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-picture"></i>
+                            图库
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-record"></i>
+                            成长记录
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-scale"></i>
+                            账户信息
+                        </li>
+                    </ul>
                 </div>
-                <div class="column details">
-                    <div>
-                        <label>日期</label>
-                        <a class="btn-select input-date">
-                            <span class="cur-select">2016-04-01</span>
-                        </a>
-                        <label>总耗时</label>
-                        <a class="btn-select">
-                            <input type="radio" class="hidden-btn" name="item">
-                            <ul class="dropdown">
-                                <li>6天</li>
-                                <li>7天</li>
-                                <li>8天</li>
-                            </ul>
-                            <span class="cur-select">
-                                8天
-                                <i class="glyphicon glyphicon-chevron-down"></i>
-                            </span>
-                        </a>
+            </aside>
+
+            <section>
+
+                <ul class="breadcrumb">
+                    <li>C站</li>
+                    <li>个人报表</li>
+                    <li>文件一</li>
+                    <li>文档1</li>
+                </ul>
+
+                <div class="main search">
+                    <form>
+                        <div class="column query">
+                            <label>查询项</label>
+                            <a class="btn-select">
+                                <input type="radio" class="hidden-btn" name="item">
+                                <ul class="dropdown">
+                                    <li>第一项</li>
+                                    <li>第二项</li>
+                                    <li>第三项</li>
+                                </ul>
+                                <span cur-select>
+                                    第一项
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="column buyer-seller">
+                            <div>
+                                <label>买方</label>
+                                <a class="btn-select buyer">
+                                    <input type="radio" class="hidden-btn" name="item">
+                                    <ul class="dropdown">
+                                        <li>小A</li>
+                                        <li>小B</li>
+                                        <li>小C</li>
+                                    </ul>
+                                    <span class="cur-select">
+                                        小A
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="seller">
+                                <label>卖方</label>
+                                <a class="btn-select buyer">
+                                    <input type="radio" class="hidden-btn" name="item">
+                                    <ul class="dropdown">
+                                        <li>小D</li>
+                                        <li>小E</li>
+                                        <li>小F</li>
+                                    </ul>
+                                    <span class="cur-select">
+                                        小D
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <a class="change">换</a>
+                        </div>
+                        <div class="column details">
+                            <div>
+                                <label>日期</label>
+                                <a class="btn-select input-date">
+                                    <span class="cur-select">2016-04-01</span>
+                                </a>
+                                <label>总耗时</label>
+                                <a class="btn-select">
+                                    <input type="radio" class="hidden-btn" name="item">
+                                    <ul class="dropdown">
+                                        <li>6天</li>
+                                        <li>7天</li>
+                                        <li>8天</li>
+                                    </ul>
+                                    <span class="cur-select">
+                                        8天
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="counters">
+                                <label>人数</label>
+                                <a class="btn-select counter">
+                                    <input type="radio" class="hidden-btn" name="item">
+                                    <ul class="dropdown">
+                                        <li>10人</li>
+                                        <li>15人</li>
+                                        <li>20人</li>
+                                    </ul>
+                                    <span class="cur-select">
+                                        10人
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </a>
+                                <label>成交项</label>
+                                <a class="btn-select deals">
+                                    <input type="radio" class="hidden-btn" name="item">
+                                    <ul class="dropdown">
+                                        <li>10项</li>
+                                        <li>30项</li>
+                                        <li>50项</li>
+                                    </ul>
+                                    <span class="cur-select">
+                                        10项
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </a>
+                                <a href="##" class="search-btn">搜索</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="main history">
+                    <div class="pre start">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
                     </div>
-                    <div class="counters">
-                        <label>人数</label>
-                        <a class="btn-select counter">
-                            <input type="radio" class="hidden-btn" name="item">
-                            <ul class="dropdown">
-                                <li>10人</li>
-                                <li>15人</li>
-                                <li>20人</li>
-                            </ul>
-                            <span class="cur-select">
-                                10人
-                                <i class="glyphicon glyphicon-chevron-down"></i>
-                            </span>
-                        </a>
-                        <label>成交项</label>
-                        <a class="btn-select deals">
-                            <input type="radio" class="hidden-btn" name="item">
-                            <ul class="dropdown">
-                                <li>10项</li>
-                                <li>30项</li>
-                                <li>50项</li>
-                            </ul>
-                            <span class="cur-select">
-                                10项
-                                <i class="glyphicon glyphicon-chevron-down"></i>
-                            </span>
-                        </a>
-                        <a href="##" class="search-btn">搜索</a>
+                    <div class="middle">
+                        <p>10:00am</p>
+                        <p>&yen;<span>1200</span></p>
+                    </div>
+                    <div class="middle">
+                        <p>11:00am</p>
+                        <p>&yen;<span>1300</span></p>
+                    </div>
+                    <div class="middle">
+                        <p>12:00am</p>
+                        <p>&yen;<span>1200</span></p>
+                    </div>
+                    <div class="middle">
+                        <p>01:00pm</p>
+                        <p>&yen;<span>1400</span></p>
+                    </div>
+                    <div class="middle">
+                        <p>02:00am</p>
+                        <p>&yen;<span>1500</span></p>
+                    </div>
+                    <div class="middle">
+                        <p>03:00pm</p>
+                        <p>&yen;<span>1800</span></p>
+                    </div>
+                    <div class="next">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </div>
+                    <div class="end">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                        历史查询
                     </div>
                 </div>
-            </form>
+
+                <div class="main statistic">
+                  <p>2016年4月份统计</p>
+                  <div class="green">
+                    <p>13311</p>
+                    <p>成交量</p>
+                    <div></div>
+                  </div>
+                  <div class="blue">
+                    <p>13311</p>
+                    <p>成交量</p>
+                    <div></div>
+                  </div>
+                  <div class="red">
+                    <p>13311</p>
+                    <p>成交量</p>
+                    <div></div>
+                  </div>
+                  <div class="yellow">
+                    <p>13311</p>
+                    <p>成交量</p>
+                    <div></div>
+                  </div>
+                </div>
+
+                <div class="main item">
+                  <div class="tab1">
+                      <div class="title1">
+                        第一组项目
+                      </div>
+                      <div class="project-item">
+                        
+                      </div>
+                  </div>
+                  <div class="tab2">
+
+                  </div>
+                </div>
+
+                <div class="main time"></div>
+            </section>
+
         </div>
-
-        <div class="main history">
-          <div class="pre start">
-            <i class="glyphicon glyphicon-chevron-left"></i>
-          </div>
-          <div class="middle">
-            <p>10:00am</p>
-            <p>&yen;1200</p>
-          </div>
-          <div class="middle">
-            <p>11:00am</p>
-            <p>&yen;1300</p>
-          </div>
-          <div class="middle">
-            <p>12:00am</p>
-            <p>&yen;1200</p>
-          </div>
-          <div class="middle">
-            <p>01:00pm</p>
-            <p>&yen;1400</p>
-          </div>
-          <div class="middle">
-            <p>02:00am</p>
-            <p>&yen;1500</p>
-          </div>
-          <div class="middle">
-            <p>03:00pm</p>
-            <p>&yen;1800</p>
-          </div>
-          <div class="next">
-            <i class="glyphicon glyphicon-chevron-right"></i>
-          </div>
-          <div class="end">
-            <i class="glyphicon glyphicon-calendar"></i>
-            历史查询
-          </div>
-        </div>
-
-        <div class="main statistic"></div>
-
-        <div class="main item"></div>
-
-        <div class="main time"></div>
-    </section>
-
-  </div>
-</body>
+    </body>
 </html>
