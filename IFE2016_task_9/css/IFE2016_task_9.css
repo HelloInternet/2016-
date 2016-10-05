@@ -375,6 +375,150 @@ section .search .buyer-seller .seller, .search .details .counters{
 .yellow > div{
   background-color: #e2cd46;
 }
+section .item{
+  height: 330px;
+  position: relative;
+}
+section .item .tab1{
+  width: 505px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.item .title1{
+  line-height: 40px;
+  background-color: #f4f6f7;
+  text-indent: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.item .project-item{
+  position: relative;
+  padding: 10px 20px;
+}
+.item .project-item ul li{
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  line-height: 30px;
+  text-align: center;
+}
+.item .project-item ul li span{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ededf0;
+  z-index:1;
+}
+.item .project-item ul li .tab {
+  display: none;
+  position: absolute;
+  width: 410px;
+  padding: 25px;
+  top: 31px;
+  border: 1px solid #aaa;
+  z-index: 0;
+  border-radius: 0 10px 10px 10px;
+}
+.item .project-item ul li .tab table{
+  width: 100%;
+  text-align: center;
+}
+.item .project-item ul li .tab table td{
+  border: 1px solid #aaa;
+}
+.item .project-item ul li .tab table td:hover{
+  background-color: #ededf0;
+  cursor: pointer;
+}
+.item .project-item ul li .tab.item-2{
+  margin-left: -77px;
+  border-radius: 10px 10px 10px 10px;
+}
+.item .project-item ul li .tab.item-3{
+  margin-left: -154px;
+  border-radius: 10px 10px 10px 10px;
+}
+.item .project-item ul li .tab.item-4{
+  margin-left: -231px;
+  border-radius: 10px 10px 10px 10px;
+}
+.item .project-item ul li .tab.item-5{
+  margin-left: -308px;
+  border-radius: 10px 10px 10px 10px;
+}
+.item .project-item ul li input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  z-index: 99;
+}
+.item .project-item ul li input:hover{
+  cursor: pointer;
+}
+.item .project-item ul li input:checked +span{
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-bottom: 1px solid #fff;
+}
+.item .project-item ul li input:checked +span + .tab{
+  display: block;
+}
+.item .tab2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.item .detail-table{
+  padding: 20px 30px;
+}
+.item .detail-table table{
+  width: 100%;
+}
+.item .detail-table table td{
+  border: 1px solid #aaa;
+  padding: 3px;
+}
+.item .detail-table table td.price,.item .detail-table table td.area,.item .detail-table table td.submit{
+  border-left: 0;
+}
+.item .detail-table table td.responsor,.item .detail-table table td.area,.item .detail-table table td.submit{
+  border-right: 0;
+}
+.item .detail-table table td.submit{
+  border-bottom: 0;
+}
+.item .detail-table table p{
+  color: #000;
+  padding-bottom: 3px;
+}
+.item .detail-table table .area{
+  height: 100px;
+  vertical-align: text-top;
+}
+.item .detail-table table .table-btn{
+  outline: 0;
+  background-color: #388bc2;
+  color: #fff;
+  border-radius: 5px;
+  width: 60px;
+  height: 26px;
+  cursor: pointer;
+}
+.item .detail-table table .table-btn:hover{
+  background-color: #3179aa;
+}
+.item .detail-table table .secret{
+  display: inline-block;
+  padding:20px 100px 0px 10px;
+}
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url('../fonts/glyphicons-halflings-regular.eot');
