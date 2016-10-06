@@ -582,6 +582,43 @@ section .item .tab1{
 .calendar .year{
   margin-left: 5px;
 }
+.calendar-table{
+  color: #000;
+  width: 340px;
+  height: 270px;
+  text-align: center;
+  margin: 10px 8px;
+}
+.calendar-table .week td{
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+.calendar-table tr:not(.week) small{
+  font-size: 14px;
+}
+.calendar-table .festival small, .calendar-table .weekend {
+  color: #c9161d;
+}
+.calendar-table .weekend small{
+  color: #000;
+}
+.calendar-table span{
+  display: block;
+  border-radius: 50%;
+  width: 45px;
+  height: 40px;
+  padding-top: 5px;
+  cursor: pointer;
+
+  transition: 0.5s ease;
+}
+.calendar-table .selected span,.calendar-table span:hover{
+  background-color: #383d4e;
+  color: #fff;
+}
+.calendar-table span:hover small{
+  color: #fff;
+}
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url('../fonts/glyphicons-halflings-regular.eot');
