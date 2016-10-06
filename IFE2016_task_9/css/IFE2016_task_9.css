@@ -385,7 +385,7 @@ section .item .tab1{
   border-radius: 10px;
   background-color: #fff;
 }
-.item .title1{
+.main .title{
   line-height: 40px;
   background-color: #f4f6f7;
   text-indent: 20px;
@@ -517,7 +517,70 @@ section .item .tab1{
 }
 .item .detail-table table .secret{
   display: inline-block;
-  padding:20px 100px 0px 10px;
+  padding:20px 100px 0 10px;
+}
+.time .calendar{
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.calendar .date{
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 6px;
+}
+.calendar .date .h-btn{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 9;
+  cursor: pointer;
+}
+.calendar .date ul{
+  border-bottom-left-radius:  5px;
+  border-bottom-right-radius:5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #aaa;
+  display: none;
+  position: absolute;
+  top: 26px;
+  width: 100%;
+}
+.calendar .date ul li{
+  box-sizing: border-box;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.calendar .date span{
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  cursor: pointer;
+}
+.calendar .month span i{
+  right: -34px;
+}
+.calendar .year span i{
+  right:-14px;
+}
+.calendar .day span i{
+  right: -1px;
+}
+.calendar  .date:hover .h-btn:checked + ul{
+  display: block;
+}
+.calendar .date ul li:hover{
+  background-color: #bababe;
+}
+.calendar .year{
+  margin-left: 5px;
 }
 @font-face {
     font-family: 'Glyphicons Halflings';
