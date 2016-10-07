@@ -42,7 +42,7 @@ header span .glyphicon-user{
 aside{
     flex:0 0 300px;
     background: #2a2e3d;
-    height:1200px;
+    height:1225px;
     box-sizing: border-box;
     position: relative;
 }
@@ -618,6 +618,93 @@ section .item .tab1{
 }
 .calendar-table span:hover small{
   color: #fff;
+}
+div.main.time{
+  height: 360px;
+  position: relative;
+}
+.time .ranking{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 495px;
+  height: 360px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.ranking .record{
+  width: 435px;
+  height: 290px;
+  box-sizing: border-box;
+  margin: 15px 30px;
+  text-align: center;
+  color: #000;
+}
+.ranking .record td{
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+.ranking .record tr:not(.heading):hover{
+  background-color: #f4f5f6;
+}
+.ranking .record .rank, .ranking .record .name{
+  width: 90px;
+}
+.ranking .record .bar{
+  display: inline-block;
+  width: 150px;
+  height: 4px;
+  background-color: #dcdcdc;
+  border-radius: 2px;
+  margin-bottom:  2px;
+}
+.ranking .record .bar .inner{
+  display: block;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+}
+.ranking .record .bar .inner-80{
+  width: 80%;
+  background-color: #ed6e52;
+}
+.ranking .record .bar .inner-75{
+  width: 75%;
+  background-color: #ef8150;
+}
+.ranking .record .bar .inner-70{
+  width: 70%;
+  background-color: #f19e4f;
+}
+.ranking .record .bar .inner-65{
+  width: 65%;
+  background-color: #7ecaf0;
+}
+.ranking .record .bar .inner-60{
+  width: 60%;
+  background-color: #7ecaf0;
+}
+.ranking .record .bar .inner-55{
+  width: 55%;
+  background-color: #7ecaf0;
+}
+.ranking .record .bar .inner-50{
+  width: 50%;
+  background-color: #7ecaf0;
+}
+.ranking .record .bar .inner-45{
+  width: 45%;
+  background-color: #7ecaf0;
+}
+.ranking .record .bar .inner-40{
+  width: 40%;
+  background-color: #7ecaf0;
+}
+.ranking .record .bar .inner-35{
+  width: 35%;
+  background-color: #7ecaf0;
+}
+.ranking .record .active{
+  background-color: #f4f5f6;
 }
 @font-face {
     font-family: 'Glyphicons Halflings';
