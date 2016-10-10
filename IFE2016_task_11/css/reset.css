@@ -1,0 +1,74 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
+em, img, q, small, strong, b, i, ol, ul, li,form, label, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, menu, nav, section, summary {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font: 18px SimHei;
+    text-align: center;
+}
+body {
+    line-height:1;
+}
+article,aside,footer,header,menu,nav,section { 
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+@media only screen and (min-width: 265px){
+    html {
+        font-size: 10px !important;
+    }
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 12px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 13px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 14px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 16px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 17px !important; 
+    }
+}
