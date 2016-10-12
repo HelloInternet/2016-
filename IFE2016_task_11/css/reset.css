@@ -8,12 +8,12 @@ article, aside, footer, header, menu, nav, section, summary {
     outline:0;
     font-size:100%;
     vertical-align:baseline;
-    background:transparent;
     font: 18px SimHei;
     text-align: center;
 }
 body {
     line-height:1;
+    background-color: #f2f2f2;
 }
 article,aside,footer,header,menu,nav,section { 
     display:block;
