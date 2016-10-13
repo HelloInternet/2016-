@@ -1,67 +1,115 @@
-table{
-	width: 300px;
-	border-collapse: collapse;
+body,table,tr,th,td,input,ul,li,div,a {
+    padding: 0;
+    margin: 0;
 }
-table td,table th{
-	border: 2px solid #fff
-}
-table th{
-	color: #fff;
-	text-align: left;
-	background-color: #000;
-}
-table tr:nth-child(2),table tr:nth-child(3),table tr:nth-child(4){
-	color: #f00;
-}
-table tr:nth-child(odd){
-	background-color: #bbb;
-}
-.focus{
-	padding: 20px;
-}
-.focus input{
-	width: 100px;
-	border: 2px solid #ddd;
 
-	transition: width 0.5s ease;
+table {
+    width: 300px;
+    border-collapse: collapse;
 }
-.focus input:focus{
-	width: 200px;
+
+table td,
+table th {
+    border: 2px solid #fff
 }
-.banner{
-	width: 250px;
-	height: 150px;
-	position: relative;
+
+table th {
+    color: #fff;
+    text-align: left;
+    background-color: #000;
 }
-.banner ul{
-	list-style: none;
-	position: absolute;
-	bottom: -14px;
-	left: 96px;
+
+table tr:nth-child(2),
+table tr:nth-child(3),
+table tr:nth-child(4) {
+    color: #f00;
 }
-.banner ul li{
-	float: left;
-	text-align: center;
-	width: 36px;
-	height: 36px;
-	line-height: 36px;
-	margin-right: 2px;
-	cursor: pointer;
-	background-color: rgba(255, 255, 255, 0.7);
+
+table tr:nth-child(odd) {
+    background-color: #bbb;
 }
-ul li a{
-	text-decoration: none;
-	color: #fff;
+
+.focus {
+    padding: 20px;
 }
-.banner #red,.banner #green,.banner #blue{
-	background-color: red;
-	position: absolute;
-	width: 100%;
-	height: 100%;
+
+.focus input {
+    width: 100px;
+    border: 2px solid #ddd;
+    transition: width 0.5s ease;
 }
-.banner #green{
-	background-color: green;
+
+.focus input:focus {
+    width: 200px;
 }
-.banner #blue{
-	background-color: blue;
+
+.banner {
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner ul {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.banner ul li {
+    float: left;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 100%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner .banner-container div {
+    display: inline-block;
+    width: 250px;
+    height: 150px;
+}
+
+.banner .banner-container {
+    position: relative;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    transition: left 0.5s ease;
+    font-size: 0;
+    word-spacing: 0;
+    letter-spacing: 0;
+    /* 这三个设置为0，是保证元素内无内容撑开width */
+}
+
+.banner .banner-container div:nth-child(1) {
+    background-color: red;
+}
+
+.banner .banner-container div:nth-child(2) {
+    background-color: green;
+}
+
+.banner .banner-container div:nth-child(3) {
+    background-color: blue;
+}
+
+#red:target~.banner-container {
+    left: 0;
+}
+
+#green:target~.banner-container {
+    left: -100%;
+}
+
+#blue:target~.banner-container {
+    left: -200%;
 }

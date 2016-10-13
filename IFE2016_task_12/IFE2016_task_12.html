@@ -67,16 +67,23 @@
 	<div class="focus"><input type="text"></div>
 	
 	<div class="banner">
-	<div class="banner-container">
-		<div id="red"></div>
-		<div id="green"></div>
-		<div id="blue"></div>
-	</div>	
+		<!-- 设置span是为了找到其兄弟元素也就是目标元素 .banner-container -->
+		<span id="red"></span>
+		<span id="green"></span>
+		<span id="blue"></span>
+		
+		<div class="banner-container">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>	
+		
 		<ul>
 			<li><a href="#red">1</a></li>
 			<li><a href="#green">2</a></li>
 			<li><a href="#blue">3</a></li>
 		</ul>
+	
 	</div>
 </body>
 </html>
