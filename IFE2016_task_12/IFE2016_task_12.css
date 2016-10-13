@@ -1,0 +1,67 @@
+table{
+	width: 300px;
+	border-collapse: collapse;
+}
+table td,table th{
+	border: 2px solid #fff
+}
+table th{
+	color: #fff;
+	text-align: left;
+	background-color: #000;
+}
+table tr:nth-child(2),table tr:nth-child(3),table tr:nth-child(4){
+	color: #f00;
+}
+table tr:nth-child(odd){
+	background-color: #bbb;
+}
+.focus{
+	padding: 20px;
+}
+.focus input{
+	width: 100px;
+	border: 2px solid #ddd;
+
+	transition: width 0.5s ease;
+}
+.focus input:focus{
+	width: 200px;
+}
+.banner{
+	width: 250px;
+	height: 150px;
+	position: relative;
+}
+.banner ul{
+	list-style: none;
+	position: absolute;
+	bottom: -14px;
+	left: 96px;
+}
+.banner ul li{
+	float: left;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	margin-right: 2px;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.banner #red,.banner #green,.banner #blue{
+	background-color: red;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.banner #green{
+	background-color: green;
+}
+.banner #blue{
+	background-color: blue;
+}
